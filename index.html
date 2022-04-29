@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="author" content="Jan Lamsis">
+
+      <title>Portfolio Website | Lamsis </title>
+
+      <!-- stylesheet -->
+      <link rel="stylesheet" href="style.css">
+
+      <!-- bootstrap cdns -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+      <!-- google fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+
+      <!-- logos -->
+      <link rel="stylesheet" href="all.min.css">
+
+      <!-- terminal effect -->
+      <script src="t.min.js"></script>
+
+      <!-- for on scroll animations -->
+      <link rel="stylesheet" href="animate.css">
+      <script src="wow.min.js"></script>
+
+</head>
+<body>
+      <div class="wrapper">
+
+            <!--------------- navbar starts here --------------->
+            <nav>
+                  <span id="brand">
+                        <a href="index.html">Jan Lamsis</a>
+                  </span>
+
+                  <ul id="menu">
+                        <li><a href="index.html">home</a></li>
+                        <li><a href= "#projects">projects</a></li>
+                  </ul>
+
+                  <div id="toggle">
+                        <div class="span">menu</div>
+                  </div>
+
+            </nav>
+
+            <div id="resize">
+                  <div class="close-btn"> X </div>
+
+                  <ul id="menu">
+                        <li><a href="index.html">home</a></li>
+                        <li><a href= "#projects">projects</a></li>
+                  </ul>
+            </div>
+            <!--------------- navbar ends here --------------->
+
+            <!--------------- hero section starts here --------------->
+            <div class="hero">
+                  <div class="header">
+                        <h1 class="line anim-typewriter">mece engr | prgmr</h1>
+                        <h2 id="bio">I enjoy taking on difficult and novel problems.</h2>
+                        <a href="#" id="resume">resume</a>
+                  </div>
+                  <div class="bio"></div>
+            </div>
+
+            <div class="scroll-down"></div>
+            <!--------------- hero section ends here --------------->
+
+            <!--------------- projects section starts here --------------->
+
+      <section id="projects">
+      <div class="projects container">
+        <div class="projects-header">
+          <h1 class="section-title">Recent Projects</h1>
+        </div>
+        <div class="all-projects">
+          <div class="project-item">
+            <div class="project-info">
+              <h1>PID Controller for Parcel Stabilization</h1>
+              <h2></h2>
+              <p>The Federal Aviation Administration heavily regulates drones; as a result, despite economic and customer incentives, wide scale drone delivery adoption is halted. Drones must meet high safety specifications; therefore, stabilization for drone delivery via tether was constructed and tested. The settling time and oscillations were significantly reduced from ~30 s to ~10 s. The solution has the potential to reduce the system's invasiveness, consequently increasing safety.</p>
+              <a href="pid_stablization.html" id="">read more</a>
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-info">
+              <h1>Estimating Permissible Life Cycle of Turboprop Propellers</h1>
+              <h2></h2>
+              <p>Aging turboprop general aircrafts are exeeding their permissible life cycle. Although most aging aircrafts are outfitted with modern engines and avionics, propellers are often overlooked because its failure is difficult to forcast; therefore CFD-FEA models will delineate propeller's Von Mises and modal characteristics, which will used to extrapolate its permissible life cycle.</p>
+                <a href="propeller_life_cycle.html" id="">read more</a>
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-info">
+              <h1>Machine Learning Model to Interpolate Missing Data and Reduce Experiment Time</h1>
+              <h2></h2>
+              <p>Without an appropriate experiment strategy, the quantity of experiments are proportional to the square of the quantity of variables. As a result, publications are bottlenecked until sufficient experimental data are collected. The project attempts to minimize the quantity of experiments by interpolating data from experimental extremas. Model will be compared to finalized experiment.</p>
+                <a href="#" id="">read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+            <!--------------- projects section ends here --------------->
+
+            <!--------------- contact starts here --------------->
+
+            <!--------------- contact ends here --------------->
+
+            <!--------------- footer starts here --------------->
+      <section class="contact">
+            <div class="footer">
+                  <div class="container">
+                        <br><br>
+
+                        <div class="collab">
+                              <div class="row">
+                                    <div class="col-lg-12">
+                                          <p class="wow fadeInUp">Learn more about me here.</p>
+                                    </div>
+                              </div>
+                        </div>
+
+                        <br>
+
+                        <div class="hr">
+                              <div class="row"></div>
+                        </div>
+
+                        <br><br>
+
+                        <div class="info">
+                              <div class="row">
+                                    <div class="col-lg-4" id="personal">
+                                          <h4 class="wow fadeInUp" data-wow-delay="0.2s">
+                                                <a href="https://github.com/JanLamsis"><i class="fab fa-2x fa-github"></i></a>
+                                          </h4>
+                                          <br><br>
+                                    </div>
+
+                                    <div class="col-lg-4" id="media">
+                                          <h4 class="wow fadeInUp" data-wow-delay="0.2s">
+                                                <a href="https://www.linkedin.com/in/jan-joshua-lamsis/"><i class="fab fa-linkedin-in"></i></i></a>
+                                          </h4>
+                                          <br><br>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </section>
+            <!--------------- footer ends here --------------->
+
+            <br><br><br><br>
+
+      </div>
+
+      <!-- greensock cdn -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      <script type="text/javascript">
+
+      // navigation starts here
+
+      $("#toggle").click(function() {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+      });
+
+      $("#resize ul li a").click(function() {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+      });
+
+      $(".close-btn").click(function() {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+      });
+
+      // navigation ends here
+
+      // nav animation
+
+      TweenMax.from("#brand", 1, {
+            delay: 0.4,
+            y: 10,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from("#bio", 1, {
+            delay: 3.2,
+            y: 10,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from("#resume", 1, {
+            delay: 3.4,
+            y: 10,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.staggerFrom("#menu li a", 1, {
+            delay: 0.4,
+            opacity: 0,
+            ease: Expo.easeInOut
+      }, 0.1);
+
+      // nav animation ends
+
+      new WOW().init();
+
+      </script>
+</body>
+</html>
