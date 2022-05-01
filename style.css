@@ -582,3 +582,19 @@ textarea:focus {
             width: 98%;
       }
 }
+
+/*--------------- google slides --------------- */
+
+#google-slides-container{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#google-slides-container iframe{
+    display: block;
+    margin-left: 25%;
+}
+/*--------------- google slides --------------- */
