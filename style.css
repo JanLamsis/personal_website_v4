@@ -15,7 +15,10 @@ body::-webkit-scrollbar{
 
 .section-title{
       text-align: center;
-      font-size: 1em;
+      font-size: 2em;
+      letter-spacing: 3px;
+      color: #3b5998;
+      text-transform: lowercase;
 }
 
 .whitespace {
@@ -99,7 +102,6 @@ nav #brand a {
 
 nav #brand a:hover {
       text-decoration: none;
-      font-weight: 700;
 }
 
 nav #menu {
@@ -129,6 +131,7 @@ nav #menu li a {
 
 nav #menu li a:hover {
       text-decoration: none;
+      font-weight: bolder;
 }
 
 #toggle {
@@ -200,6 +203,7 @@ nav #menu li a:hover {
 
 #resize #menu li a:hover {
       text-decoration: none;
+      font-weight: bolder;
 }
 
 #resize.active {
@@ -259,22 +263,10 @@ nav #menu li a:hover {
       font-size: 5em;
 }
 
-.hero h2, .hero a {
+.hero h2{
       font-size: 1em;
       font-weight: normal;
       color: #0f0f0f;
-}
-
-.hero a {
-      margin-left: 45%;
-}
-
-.hero a:link {
-      text-decoration: none;
-}
-
-.hero a:hover{
-      color: #e21a41;
 }
 
 @media(max-width: 768px) {
