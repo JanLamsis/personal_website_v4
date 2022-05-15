@@ -33,10 +33,10 @@ body::-webkit-scrollbar{
 
 /*--------------- typewriter effect --------------- */
 .line {
-      width: 24em;
+      width: 18em;
       top: 50%;
       margin: auto;
-      border-right: 2px solid rgba(0,  0, 0, 0.75);
+      border-right: 5px solid white;
       text-align: center;
       white-space: nowrap;
       overflow: hidden;
@@ -44,7 +44,7 @@ body::-webkit-scrollbar{
 }
 
 .anim-typewriter {
-      animation: typewriter 3s steps(40) 1s 1 normal both,
+      animation: typewriter 2s steps(40) 1s 1 normal both,
       blinkTextCussor 400ms steps(40) infinite normal;
 }
 
@@ -53,7 +53,7 @@ body::-webkit-scrollbar{
             width: 0;
       }
       to {
-            width: 12em;
+            width: 5em;
       }
 }
 
@@ -63,14 +63,14 @@ body::-webkit-scrollbar{
                   width: 0;
             }
             to {
-                  width: 13em;
+                  width: 8em;
             }
       }
 }
 
 @keyframes blinkTextCussor {
       from {
-            border-right-color: rgba(0, 0, 0, 0.75);
+            border-right-color: rgba(255, 255, 255, 0.75);
       }
       to {
             border-right-color: transparent;
@@ -89,7 +89,7 @@ nav {
 nav #brand {
       float: left;
       display: block;
-      margin-left: 82px;
+      margin-left: 200px;
       line-height: 80px;
       font-weight: 700;
 }
@@ -105,7 +105,7 @@ nav #brand a:hover {
 
 nav #menu {
       float: left;
-      right: 80px;
+      right: 200px;
       position: fixed;
 }
 
@@ -152,7 +152,7 @@ nav #menu li a:hover {
       position: absolute;
       right: 16px;
       font-weight: 300;
-      color: rgb(255, 255, 255);
+      color: whitesmoke;
       z-index: 2;
       cursor: pointer;
       top: -2px;
@@ -197,7 +197,7 @@ nav #menu li a:hover {
 }
 
 #resize #menu li a {
-      color: #fff;
+      color: whitesmoke;
 }
 
 #resize #menu li a:hover {
@@ -249,23 +249,32 @@ nav #menu li a:hover {
       display: flex;
       align-items: center;
       justify-content: center;
+      background-image: url("img/me_back.jpg");
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: center;
+ 
+      animation: fadein 1s normal forwards;
 }
 
-.hero h1, .hero h2, .hero a{
+.hero h1, .hero a {
+      font-family: 'Lora', serif;
       font-weight: bold;
       text-align: center;
-      letter-spacing: 3px;
-      z-index: 0;
+      color: white;
+      z-index: 1;
 }
 
 .hero h1 {
       font-size: 5em;
 }
 
-.hero h2{
+.hero h2 {
       font-size: 1em;
-      font-weight: normal;
-      color: #0f0f0f;
+      font-weight: bold;
+      text-align: center;
+      color: white;
+      z-index: 1;
 }
 
 @media(max-width: 768px) {
@@ -275,6 +284,16 @@ nav #menu li a:hover {
 
       .header h2, .hero a{
             font-size: 10px;
+      }
+}
+  
+@keyframes fadein {
+      from {
+            opacity: 0;
+      }
+
+      to {
+            opacity: 1;
       }
 }
 
@@ -291,8 +310,8 @@ nav #menu li a:hover {
       text-shadow: 0;
       width: 13px;
       height: 13px;
-      border-bottom: 2px solid rgb(0, 0, 0);
-      border-right: 2px solid rgb(0, 0, 0);
+      border-bottom: 5px solid white;
+      border-right: 5px solid white;
       -webkit-transform: translate(-50%, 0) rotate(45deg);
       animation: fade_move_down 3s cubic-bezier(0.19, 1, 0.22, 1) infinite;
 }
@@ -313,76 +332,99 @@ nav #menu li a:hover {
 
 /*--------------- projects section --------------- */
 
-#projects .projects {
-	flex-direction: column;
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 100px 0;
+#projects {
+      margin-left: 200px;
+      margin-right: 200px;
+      margin-top: 10vh;
 }
-#projects .projects-header h1 {
-	margin-bottom: 50px;
-      font-weight: bold;
-}
-#projects .all-projects {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-}
-#projects .project-item {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	width: 80%;
-	margin: 20px auto;
-	overflow: hidden;
-	border-radius: 10px;
-}
-#projects .project-info {
-	padding: 30px;
-	flex-basis: 50%;
-	height: 100%;
-	display: flex;
-	align-items: flex-start;
-	justify-content: center;
-	flex-direction: column;
-	color: rgb(0, 0, 0);
-}
-#projects .project-info h1 {
-	font-size: 1em;
-	font-weight: bold;
-}
-#projects .project-info h2 {
-	font-size: 1em;
-	font-weight: bold;
-      color: #999;
-	margin-top: 10px;
 
+#projects .project-header {
 }
-#projects .project-info p {
-	color: rgb(0, 0, 0);
+
+#projects .project-header h1 {
+      margin-top: 80px;
       font-size: 1em;
 }
-#projects .project-img {
-	flex-basis: 50%;
-	height: 300px;
-	overflow: hidden;
-	position: relative;
+
+#projects hr {
+      width: 90%;
 }
-#projects .project-img:after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
+
+#projects .projects {
 }
-#projects .project-img img {
-	transition: 0.3s ease transform;
+
+#projects .all-projects {
+      display: grid;
+      grid-template-columns: repeat(2,auto);
+      grid-column-gap: 80px;
+      align-items: center;
+      justify-content: center;
 }
-#projects .project-item:hover .project-img img {
-	transform: scale(1.1);
+
+#projects img {
+      width: 600px;
+      height: 600px;
+      object-fit: cover;
+}
+
+#projects .space {
+      height: 200px;
+}
+
+#projects .project-item {
+
+}
+
+#projects .project-info {
+
+}
+
+#projects .img1 {
+
+}
+
+#projects .project-info h1 {
+      font-size: 1em;
+}
+
+#projects .project-info h2 {
+	
+}
+
+#projects .project-info p {
+
+}
+
+#projects a h1 {
+      margin-top: 100px;
+      font-size: 1em;
+}
+
+/*--------------- about me --------------- */
+
+#about {
+      margin-left: 200px;
+      margin-right: 200px;
+      margin-top: 10vh;
+}
+
+#about .about-header h1 {
+      margin-top: 80px;
+      font-size: 1em;
+}
+
+#about hr {
+      width: 90%;
+}
+
+#about .about-item h1 {
+      font-size: 5em;
+      margin-top: 100px;
+}
+
+#about a h1 {
+      margin-top: 100px;
+      font-size: 1em;
 }
 
 /*--------------- general style --------------- */
@@ -391,9 +433,23 @@ nav #menu li a:hover {
 
 /*--------------- footer section --------------- */
 
-/*---------------about page --------------- */
 
 /*--------------- contact form --------------- */
+
+#contact {
+      margin-left: 200px;
+      margin-right: 200px;
+      margin-top: 10vh;
+}
+
+#contact .contact-header h1 {
+      margin-top: 80px;
+      font-size: 1em;
+}
+
+#contact hr {
+      width: 90%;
+}
 
 /*--------------- google slides --------------- */
 
