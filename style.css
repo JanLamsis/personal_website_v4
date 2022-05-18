@@ -294,6 +294,18 @@ nav #menu li a:hover {
             font-size: 4.5em;
       }
 }
+
+@supports (background-attachment: fixed) {
+      .hero {
+            background-attachment: fixed;
+      }
+}
+
+@supports not (background-attachment: fixed) {
+      .hero {
+            background-attachment: scroll;
+      }
+}
   
 @keyframes fadein {
       from {
@@ -417,6 +429,9 @@ nav #menu li a:hover {
       margin-top: 100px;
       font-size: 1em;
       color: #0f0f0f;
+}
+
+@media(max-width: 1280px) {
 }
 
 @media(max-width: 768px) {
