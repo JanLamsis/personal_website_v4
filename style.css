@@ -432,6 +432,7 @@ nav #menu li a:hover {
 }
 
 @media(max-width: 1280px) {
+      max-width: 80%;
 }
 
 @media(max-width: 768px) {
