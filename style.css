@@ -13,6 +13,10 @@ body::-webkit-scrollbar{
       display: none;
 }
 
+.space{
+      height: 100px;
+}
+
 .section-title{
       text-align: center;
       font-size: 2em;
@@ -58,7 +62,7 @@ body::-webkit-scrollbar{
                   width: 0;
             }
             to {
-                  width: 8em;
+                  width: 5em;
             }
       }
 }
@@ -84,7 +88,7 @@ nav {
 nav #brand {
       float: left;
       display: block;
-      margin-left: 200px;
+      margin-left: 10%;
       line-height: 80px;
       font-weight: 700;
       position: relative;
@@ -101,7 +105,7 @@ nav #brand a:hover {
 
 nav #menu {
       float: left;
-      right: 200px;
+      right: 10%;
       position: fixed;
 }
 
@@ -242,35 +246,47 @@ nav #menu li a:hover {
 .hero {
       height: 100vh;
       width: 100vw;
-      display: flex;
+      position: relative;
+      text-align: center;
       align-items: center;
       justify-content: center;
       background-image: url("img/me_back.jpg");
+      background-size: auto 100vh;
       background-attachment: fixed;
       background-repeat: no-repeat;
       background-position: center;
  
       animation: fadein 1s normal forwards;
+
 }
 
-.hero h1, .hero a {
-      font-family: 'Lora', serif;
-      font-weight: bold;
+.hero img {
+      max-width: 100%;
+      height: 100vh;
+      object-fit: cover;
+}
+
+.hero h1, .hero h2 {
+      position: absolute;
+      z-index: 999;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      top: 50vh;
       text-align: center;
+      width: 50vw;
+      font-weight: bold;
       color: white;
-      z-index: 1;
 }
 
 .hero h1 {
       font-size: 6em;
+      font-family: 'Lora', serif;
 }
 
 .hero h2 {
       font-size: 1em;
-      font-weight: bold;
-      text-align: center;
-      color: white;
-      z-index: 1;
+      margin-top: 100px;
 }
 
 @media(max-width: 768px) {
@@ -325,10 +341,11 @@ nav #menu li a:hover {
 /*--------------- projects section --------------- */
 
 #projects {
-      margin-left: 200px;
-      margin-right: 200px;
+      margin-left: 10%;
+      margin-right: 10%;
       align-items: center;
       justify-content: center;
+      text-align: center;
 }
 
 #projects .project-header {
@@ -337,10 +354,10 @@ nav #menu li a:hover {
 #projects .project-header h1 {
       margin-top: 80px;
       font-size: 1em;
+      text-align: left;
 }
 
 #projects hr {
-      width: 90%;
 }
 
 #projects .projects {
@@ -348,16 +365,14 @@ nav #menu li a:hover {
 
 #projects .all-projects {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(600px, 0.5fr));
       grid-column-gap: 40px;
 }
 
-#projects img {
-      width: 600px;
-      height: 600px;
-      object-fit: cover;
+.project-info img {
       -webkit-filter: grayscale(100%);
       filter: grayscale(100%);
+      max-width: 100%;
 }
 
 #projects img:hover {
@@ -377,12 +392,9 @@ nav #menu li a:hover {
 
 }
 
-#projects .img1 {
-
-}
-
 #projects .project-info h1 {
       font-size: 1em;
+      text-align: left;
 }
 
 #projects .project-info h2 {
@@ -395,6 +407,7 @@ nav #menu li a:hover {
 
 #projects a {
       text-decoration: none;
+      text-align: left;
 }
 
 #projects a h1 {
@@ -408,13 +421,23 @@ nav #menu li a:hover {
             margin-left: 50px;
             margin-right: 50px;
       }
+
+      #projects .all-projects {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-column-gap: 0px;
+      }
+
+      .project-info img {
+            
+      }
+
 }
 
 /*--------------- about me --------------- */
 
 #about {
-      margin-left: 200px;
-      margin-right: 200px;
+      margin-left: 10%;
+      margin-right: 10%;
 }
 
 #about .about-header h1 {
@@ -423,7 +446,6 @@ nav #menu li a:hover {
 }
 
 #about hr {
-      width: 90%;
       margin-bottom: 80px;
 }
 
@@ -500,8 +522,8 @@ nav #menu li a:hover {
 /*--------------- contact form --------------- */
 
 #contact {
-      margin-left: 200px;
-      margin-right: 200px;
+      margin-left: 10%;
+      margin-right: 10%;
 }
 
 #contact .contact-header h1 {
@@ -510,7 +532,6 @@ nav #menu li a:hover {
 }
 
 #contact hr {
-      width: 90%;
       margin-bottom: 100px;
 }
 
