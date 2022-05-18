@@ -395,10 +395,13 @@ nav #menu li a:hover {
 #projects .project-info h1 {
       font-size: 1em;
       text-align: left;
+      font-weight: bold;
+      color: darkgrey;
 }
 
 #projects .project-info h2 {
-	
+	font-size: 1em;
+      text-align: left;
 }
 
 #projects .project-info p {
