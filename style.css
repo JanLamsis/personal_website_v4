@@ -384,7 +384,7 @@ nav #menu li a:hover {
 .project-info img {
       -webkit-filter: grayscale(100%);
       filter: grayscale(100%);
-      max-width: 100%;
+      max-width: 90%;
 }
 
 #projects img:hover {
@@ -432,7 +432,9 @@ nav #menu li a:hover {
 }
 
 @media(max-width: 1280px) {
-      max-width: 80%;
+      .project-info img {
+            max-width: 80%;
+      }
 }
 
 @media(max-width: 768px) {
@@ -449,7 +451,6 @@ nav #menu li a:hover {
       .project-info img {
             
       }
-
 }
 
 /*--------------- about me --------------- */
@@ -561,19 +562,24 @@ nav #menu li a:hover {
 }
 
 #contact-icon ul {
+
 }
 
 #contact-icon li {
       list-style: none;
       padding-left: 0px;
-      display: inline;
+      display: flex;
       padding-right: 80px;
 }
 
 @media(max-width: 768px) {
-      #contact{
+      #contact {
             margin-left: 50px;
             margin-right: 50px;
+      }
+
+      #contact-icon {
+
       }
 }
 
