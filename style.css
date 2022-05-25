@@ -544,6 +544,7 @@ nav #menu li a:hover {
 #contact {
       margin-left: 10%;
       margin-right: 10%;
+    
 }
 
 #contact .contact-header h1 {
@@ -568,8 +569,8 @@ nav #menu li a:hover {
 #contact-icon li {
       list-style: none;
       padding-left: 0px;
-      display: flex;
       padding-right: 80px;
+      display: inline;
 }
 
 @media(max-width: 768px) {
