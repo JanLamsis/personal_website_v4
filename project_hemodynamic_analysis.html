@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="author" content="Jan Lamsis">
+
+      <title>CFD FEA Model </title>
+
+      <!-- stylesheet -->
+      <link rel="stylesheet" href="style.css">
+
+      <!-- bootstrap cdns -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+      <!-- google fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+      <!-- ionicons cdn -->
+      <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+
+      <!-- logos -->
+      <link rel="stylesheet" href="all.min.css">
+
+      <!-- for on scroll animations -->
+      <link rel="stylesheet" href="animate.css">
+      <script src="wow.min.js"></script>
+
+</head>
+<body>
+      <div class="wrapper">
+
+            <!--------------- navbar starts here --------------->
+            <nav>
+                  <span id="brand">
+                        <a href="index.html">Jan Lamsis</a>
+                  </span>
+
+                  <ul id="menu">
+                        <li><a href= "#projects">projects</a></li>
+                        <li><a href= "#about">about me</a></li>
+                  </ul>
+
+                  <div id="toggle">
+                        <div class="span">menu</div>
+                  </div>
+
+            </nav>
+
+            <div id="resize">
+                  <div class="close-btn"> X </div>
+
+                  <ul id="menu">
+                        <li><a href= "#projects">projects</a></li>
+                        <li><a href= "#about">about me</a></li>
+                  </ul>
+            </div>
+            <!--------------- navbar ends here --------------->
+
+            <div class="whitespace"></div>
+
+            <!--------------- hero section starts here --------------->
+            <div class="space"></div>
+
+            <div id="google-slides-container">
+                  <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSFuFPqxr82p20P_bXkPd4ElV6h2Y-x4pH5bKYTk8t2-G0xCCZ6eq-jGUT7IhLHU3uKgm5ihb9mQVI9/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            </div>
+
+            <div class="container">
+                  <div class="hero-content">
+                        <br><br>
+                        <div class="row">
+                              <div class="col-lg-12">
+                                    <br>
+
+                                    <h1 class="wow fadeInUp" data-wow-delay="1s">Hemodynamic Analysis</h1><br><br>
+                                    
+                                    <div class="row">
+                                          <div class="col-lg-4">
+                                                <p class="wow fadeInUp" data-wow-delay="1.2s">tools:</p>
+                                                <h6 class="wow fadeInUp" data-wow-delay="1.3s">ANSYS Fluent, ANSYS Mechanical, Basic Scripting</h6>
+                                          </div>
+
+                                          <div class="col-lg-4">
+                                                <p class="wow fadeInUp" data-wow-delay="1.4s">started:</p>
+                                                <h6 class="wow fadeInUp" data-wow-delay="1.5s">May 2022</h6>
+                                          </div>
+
+                                          <div class="col-lg-4">
+                                                <p class="wow fadeInUp" data-wow-delay="1.6s">end:</p>
+                                                <h6 class="wow fadeInUp" data-wow-delay="1.7s">May 2022</h6>
+                                          </div>
+                                    </div>
+                                    <br>
+                                    <p class="wow fadeInUp" data-wow-delay="1s">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab quos numquam expedita necessitatibus nemo ex beatae velit, dicta id placeat dolor vero laboriosam repellat dolore in earum repellendus, officiis non tempora nulla quisquam alias ullam veritatis. Et, neque. Quo a odit deserunt molestias magnam consectetur laudantium voluptate assumenda, hic cupiditate!</p>
+
+                                    <p class="wow fadeInUp" data-wow-delay="1s">More analysis (i.e. stress crack corrosion and force and random vibrations) should be explored.</p>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+            <!--------------- hero section ends here --------------->
+
+            <!--------------- project image section starts here --------------->
+
+            <!--------------- project image section ends here --------------->
+
+            <!--------------- project nav starts here --------------->
+
+            <!--------------- project nav starts here --------------->
+
+            <section id="contact">
+
+                  <div class="contact-container">
+      
+                        <div class="contact-header">
+                              <h1 class="wow fadeInUp" data-wow-delay="0.5s">contacts</h1>
+                        </div>
+      
+                        <hr class="wow fadeInUp" data-wow-delay="0.5s">
+      
+                  </div>
+      
+                  <ul id="contact-icon">
+                        <li><a href="https://www.linkedin.com/in/jan-joshua-lamsis/"><img src="icons/linkedin.png" alt=""></a></li>
+                        <li><a href="https://github.com/JanLamsis"><img src="icons/github.png" alt=""></a></li>
+                        <li><a href="https://www.instagram.com/janlamsis/"><img src="icons/instagram.png" alt=""></a></li>
+                  </ul>
+      
+            </section>
+
+            <!--------------- footer starts here --------------->
+
+            <!--------------- footer ends here --------------->
+
+      </div>
+
+      <!-- greensock cdn -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      <script type="text/javascript">
+
+      // navigation starts here
+      $("#toggle").click(function() {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+      });
+
+      $("#resize ul li a").click(function() {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+      });
+
+      $(".close-btn").click(function() {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+      });
+
+      // navigation ends here
+
+      // nav animation
+
+      TweenMax.from("#brand", 1, {
+            delay: 0.4,
+            y: 10,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.staggerFrom("#menu li a", 1, {
+            delay: 0.4,
+            opacity: 0,
+            ease: Expo.easeInOut
+      }, 0.1);
+
+      TweenMax.from("#google-slides-container", 1, {
+            delay: 1,
+            y: 10,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+
+      // nav animation ends
+
+
+
+      new WOW().init();
+
+
+      </script>
+</body>
+</html>
